@@ -4,7 +4,7 @@ function buildFunctions() {
   var arr = [];
   for (i = 0; i < 3; i++) {
     arr.push(function() {
-      console.log(i); // HEre i is free variable
+      console.log(i); // Here 'i' is free variable
       // A free variable is a avriable that is outside the function but you have access to it
     });
   }
