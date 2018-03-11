@@ -2,7 +2,8 @@ var arrayOne = new Array("apple", 1, false); // one way to declare Arrays
 console.log(arrayOne);
 
 // second way to declare Arrays
-// One array can store multiple data types like string, boolena, object, number, function!
+// One array can store multiple data types like string, boolean, object, number, function!
+// Arrays are collections of anything!
 
 var arrayTwo = [
   21,
