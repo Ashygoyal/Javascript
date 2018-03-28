@@ -29,3 +29,7 @@ var newLogName = logName.bind(person);
 newLogName();
 // since newLogName is a copy of logName, it still accepts the arguments lang1, lang2
 newLogName("english", "espanol");
+
+// call() doesnt create a copy of the function, it executes the function itself.
+// it takes an object to which 'this' will refer to, and arguments
+logName.call(person, 'en','es');
