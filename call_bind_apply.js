@@ -37,3 +37,15 @@ logName.call(person, 'en','es');
 // apply() does same thing as call(), only difference is, it accepts an array of parameters.
 var arr=['en','es'];
 logName.apply(person, arr);
+
+// ********* Real life situations to use call, bind, apply ******
+
+//Example1: Function Borrowing
+var person2 = {
+  fname:'John',
+  lname:'Doe'
+} ;
+// this person object doesnt have a getFullName function,
+// so we borrow it from another object
+
+console.log(person.getFullName.apply(person2)); // we can achieve same result using 'call' method
