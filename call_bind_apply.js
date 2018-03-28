@@ -33,3 +33,7 @@ newLogName("english", "espanol");
 // call() doesnt create a copy of the function, it executes the function itself.
 // it takes an object to which 'this' will refer to, and arguments
 logName.call(person, 'en','es');
+
+// apply() does same thing as call(), only difference is, it accepts an array of parameters.
+var arr=['en','es'];
+logName.apply(person, arr);
