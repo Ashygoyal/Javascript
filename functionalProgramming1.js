@@ -48,3 +48,14 @@ var checkPastLimit = function(limiter, item) {
 var arr6 = mapForEach(arr3, checkPastLimit.bind(this, 1));
 
 console.log("This is Array 6: " + arr6);
+
+// ------- simplifying checkPastLimit function -----------
+
+var checkPastLimitSimplified = function(limiter){
+  return function(limiter, item){
+    return item > limiter;
+  }.bind(this, limiter);
+};
+
+var arr7 = mapForEach(arr3, checkPastLimitSimplified(2));
+console.log('This is Array7: '+ arr7);
