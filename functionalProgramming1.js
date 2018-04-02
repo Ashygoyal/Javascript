@@ -27,13 +27,13 @@ var arr4 = mapForEach(arr3, function(item) {
   return item * 2;
 });
 
-console.log("This is Array4: " + arr4);
+console.log("This is Array4: " + arr4); // output [2,4,6]
 
 var arr5 = mapForEach(arr3, function(item) {
   return item > 2;
 });
 
-console.log("This is Array5: " + arr5);
+console.log("This is Array5: " + arr5); // output [false, false, true]
 
 // --------- one more example --------------------
 
@@ -47,7 +47,7 @@ var checkPastLimit = function(limiter, item) {
 
 var arr6 = mapForEach(arr3, checkPastLimit.bind(this, 1));
 
-console.log("This is Array 6: " + arr6);
+console.log("This is Array 6: " + arr6); // output [false, true, true]
 
 // ------- simplifying checkPastLimit function -----------
 
@@ -58,4 +58,4 @@ var checkPastLimitSimplified = function(limiter){
 };
 
 var arr7 = mapForEach(arr3, checkPastLimitSimplified(2));
-console.log('This is Array7: '+ arr7);
+console.log('This is Array7: '+ arr7); // output [false, false, true]
