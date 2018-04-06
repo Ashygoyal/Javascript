@@ -28,3 +28,7 @@ However, __proto__ is available everywhere.
 
 // We can stop the prototype chain at a desired point (object) in hierarchy
 // by equating that object's prototype to 'null'
+
+
+/******   More on prototypes  ******/
+// http://dmitrysoshnikov.com/ecmascript/javascript-the-core/#a-prototype-chain
