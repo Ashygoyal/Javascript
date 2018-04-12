@@ -4,6 +4,10 @@
 // second way: Function Constructors and 'new' - Function Constructor is a function
 // that is specifically used to construct an object
 
+/* Convention 
+Any function that we intend to be a function constructor, the first letter is a capital letter.
+*/
+
 function Person() {
   this.fname = "John";
   this.lname = "Doe";
