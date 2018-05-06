@@ -22,5 +22,28 @@ john.lname ='Goyal';
 
 console.log(john.greet()); // Hi Ashish
 
+// Now this Object.create is a new feature in newer browsers. But if
+// we need to implement it for older browsers, we will use a polyfill
+
+//Polyfill: is a code which adds a feature that the engine may lack
+
+// *****************************
+/*
+
+if(!Object.create){
+  Object.create = function(o){
+    if(arguments.length>1){
+      throw new Error ('Object.create only accepts the first parameter');
+    }
+    function F(){};
+    F.prototype = o; 
+    return new F(); // 'new' creates an empty object, runs F() which is empty,
+    // and points the prototype of the new empty object to whatever you passed in.
+  };
+}
+
+*/
+// *********************************
+
 
 
