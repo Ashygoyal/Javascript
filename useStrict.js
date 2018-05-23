@@ -5,8 +5,8 @@
 
 var person;
 
-persom = {};
-console.log(persom);
+persom = {};  
+console.log(persom); // wont throw any error, as 'use strict' isnt the first line of this file
 
 
 // ******************************** 
