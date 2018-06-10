@@ -3,4 +3,21 @@
 // html and decides how to render it on screen. A tree like structure that stores a representation
 // of the html. jQuery makes it easy to look at DOM to find elements on page and manipulate them.
 
-var q =$();
+var q = $("ul.people li"); // $ or jQuery
+console.log(q); // jQuery.fn.init(3)
+
+// behind the scenes
+/*
+
+jQuery = function (selector, context){
+
+return new jQuery.fn.init(selector, context);
+
+}
+*/
+
+//jQuery here, is a function that returns an object by calling
+// the function constructor (new keyword)
+
+
+
